@@ -1,10 +1,5 @@
 //initialize express router
 let router = require('express').Router();
-
-//Import product Controller
-var productController = require('./productController');
-
-
 //set default API response
 router.get('/', function(req, res) {
     res.json({
@@ -13,9 +8,8 @@ router.get('/', function(req, res) {
     });
 });
 
-//Export API routes
-module.exports = router;
-
+//Import product Controller
+var productController = require('./productController');
 
 // product routes
 router.route('/product')

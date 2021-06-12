@@ -1,9 +1,9 @@
-var mongoose = requore('mongoose');
+var mongoose = require('mongoose');
 
 
 //schema
-var productSchema = mpngoose.Schema({
-    title: {
+var productSchema = mongoose.Schema({
+    name: {
         type: String,
         required: true
     },
@@ -12,6 +12,10 @@ var productSchema = mpngoose.Schema({
         required: true
     },
     description: {
+        type: String,
+        required: true
+    },
+    image: {
         type: String,
         required: true
     }
