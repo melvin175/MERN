@@ -1,30 +1,36 @@
 //Import Product Model 
-Product = require('./productModel')
+const Product = require('../model/productModel')
 
 //For index
-exports.index = function (req, res) {
-    Product.get (function (err, product){
-        if(err) 
-        res.json({
-            status: "error",
-            message: err
-        });
-        res.json({
-            status: "success",
-            mesage: "Got the product successfully",
-            data: product
-        });
-    });
+exports.index = async function (req, res) {
+    // Product.get (function (err, product){
+    //     if(err) 
+    //     res.json({
+    //         status: "error",
+    //         message: err
+    //     });
+    //     res.json({
+    //         status: "success",
+    //         mesage: "Got the product successfully",
+    //         data: product
+    //     });
+    // });
+
+    const allProducts = await Product.find({
+        
+    })
+    res.json({
+        data: allProducts
+    })
 };
 
 
 //For creating new product
 exports.add = function (req, res) {
-    var product = new Product();
-    product.name = req.bodyname? req.body.name: product.name;
-    product.price = req.body.price;
-    product.description = req.body.description;
-    product.image = req.body.image;
+    const {name, price, description, image} = req.body;
+    const product = new Product({
+        name, price, description, image
+});
 
 
 //Save and check error

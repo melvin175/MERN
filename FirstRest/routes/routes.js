@@ -9,7 +9,7 @@ router.get('/', function(req, res) {
 });
 
 //Import product Controller
-var productController = require('./productController');
+var productController = require('../controller/productController');
 
 // product routes
 router.route('/product')
