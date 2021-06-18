@@ -12,7 +12,7 @@ exports.index = async function (req, res) {
     //     res.json({
     //         status: "success",
     //         mesage: "Got the product successfully",
-    //         data: product
+    //         array: product
     //     });
     // });
 
@@ -20,7 +20,7 @@ exports.index = async function (req, res) {
         
     })
     res.json({
-        data: allProducts
+        array: allProducts
     })
 };
 
@@ -39,7 +39,7 @@ exports.add = function (req, res) {
         res.json(err);
     res.json({
         message: "New  Bio Added!",
-        data: product
+        array: product
     });
  });
 };
@@ -52,7 +52,7 @@ exports.view = function (req, res) {
             res.send(err);
         res.json({
         message: 'Product details',
-        data: product
+        array: product
         });
     });
 }
@@ -74,7 +74,7 @@ exports.update = function (req, res) {
                 res.json(err)
             res.json({
                 message: "Product updated successfully",
-                data: product
+                array: product
             });
         });
     });
