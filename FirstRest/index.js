@@ -30,13 +30,13 @@ let apiRoutes = require("./routes/routes");
 //Use API routes in the App
 app.use("/api", apiRoutes);
 
-// app.use((req, res, next) => {
-//   res.header("Access-Control-Allow-Origin", "*");
-//   res.header(
-//     "Access-Control-Allow-Headers",
-//     "Origin, X-Requested-With, Content-Type, Accept, Authorization"
-//   );
-// });
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header(
+    "Access-Control-Allow-Headers",
+    "Origin, X-Requested-With, Content-Type, Accept, Authorization"
+  );
+});
 
 //connect to mongoose
 // const dbPath = 'mongodb://localhost/firstrest';
