@@ -1,7 +1,9 @@
 /* eslint-disable no-unused-vars */
 require("dotenv").config();
 let express = require("express");
+var cors = require("cors");
 let app = express();
+app.use(cors());
 
 //import mongoose
 // let mongoose = require("mongoose");
@@ -27,6 +29,14 @@ let apiRoutes = require("./routes/routes");
 
 //Use API routes in the App
 app.use("/api", apiRoutes);
+
+// app.use((req, res, next) => {
+//   res.header("Access-Control-Allow-Origin", "*");
+//   res.header(
+//     "Access-Control-Allow-Headers",
+//     "Origin, X-Requested-With, Content-Type, Accept, Authorization"
+//   );
+// });
 
 //connect to mongoose
 // const dbPath = 'mongodb://localhost/firstrest';
