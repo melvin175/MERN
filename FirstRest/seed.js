@@ -15,7 +15,7 @@ const Products = [
       "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
     category: "men's clothing",
     image:
-      "https://res.cloudinary.com/dh0f4rsde/image/upload/v1624612507/5_bpueiu.jpg",
+      "https://res.cloudinary.com/dh0f4rsde/image/upload/v1625166540/5_qwag6i.png",
   },
   {
     name: "Mens Casual Premium Slim Fit T-Shirts",
@@ -33,7 +33,7 @@ const Products = [
       "great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions, such as working, hiking, camping, mountain/rock climbing, cycling, traveling or other outdoors.",
     category: "men's clothing",
     image:
-      "https://res.cloudinary.com/dh0f4rsde/image/upload/v1625163109/3_xfvsgh.png",
+      "https://res.cloudinary.com/dh0f4rsde/image/upload/v1625166806/3_zldx9j.png",
   },
   {
     name: "Mens Casual Slim Fit",
@@ -96,7 +96,7 @@ const Products = [
       "Easy upgrade for faster boot up, shutdown, application load and response (As compared to 5400 RPM SATA 2.5” hard drive.",
     category: "electronics",
     image:
-      "https://res.cloudinary.com/dh0f4rsde/image/upload/v1625162544/Group_7_riklcn.png",
+      "https://res.cloudinary.com/dh0f4rsde/image/upload/v1625166541/7_l7k4cg.png",
   },
   {
     name: "Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5",
@@ -141,7 +141,7 @@ const Products = [
       "Note:The Jackets is US standard size, Please choose size as your usual wear Material: 100% Polyester;",
     category: "men's clothing",
     image:
-      "https://res.cloudinary.com/dh0f4rsde/image/upload/v1625162545/Group_10_xteq02.png",
+      "https://res.cloudinary.com/dh0f4rsde/image/upload/v1625166541/10_gucsra.png",
   },
   {
     name: "Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket",
@@ -159,7 +159,7 @@ const Products = [
       "Lightweight perfet for trip or casual wear---Long sleeve with hooded, adjustable drawstring waist design. Button and zipper front closure raincoat.",
     category: "women's clothing",
     image:
-      "https://res.cloudinary.com/dh0f4rsde/image/upload/v1625162547/Group_19_dtario.png",
+      "https://res.cloudinary.com/dh0f4rsde/image/upload/v1625166541/19_dwgyar.png",
   },
   {
     name: "MBJ Women's Solid Short Sleeve Boat Neck V",
