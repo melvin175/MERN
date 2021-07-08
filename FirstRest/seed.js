@@ -51,7 +51,7 @@ const Products = [
       "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
     category: "men's clothing",
     image:
-      "https://res.cloudinary.com/dh0f4rsde/image/upload/v1624612507/5_bpueiu.jpg",
+      "https://res.cloudinary.com/dh0f4rsde/image/upload/v1625166540/5_qwag6i.png",
   },
   {
     name: "Solid Gold Petite Micropave",

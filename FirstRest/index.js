@@ -2,11 +2,9 @@
 require("dotenv").config();
 let express = require("express");
 var cors = require("cors");
+const userRoutes = require("./routes/userRoutes");
 let app = express();
 app.use(cors());
-
-//import mongoose
-// let mongoose = require("mongoose");
 
 const { add } = require("./controller/productController");
 
@@ -30,6 +28,8 @@ let apiRoutes = require("./routes/routes");
 //Use API routes in the App
 app.use("/api", apiRoutes);
 
+app.use("/api/users", userRoutes);
+
 app.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "*");
   res.header(
@@ -37,13 +37,3 @@ app.use((req, res, next) => {
     "Origin, X-Requested-With, Content-Type, Accept, Authorization"
   );
 });
-
-//connect to mongoose
-// const dbPath = 'mongodb://localhost/firstrest';
-// const options = {useNewUrlParser: true, useUnifiedTopology: true}
-// const mongo = mongoose.connect(dbPath, options);
-// mongo.then(() => {
-//     console.log('connected');
-// }, error => {
-//     console.log(error, 'error');
-// })
